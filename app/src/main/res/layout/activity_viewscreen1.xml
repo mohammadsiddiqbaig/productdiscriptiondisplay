@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="viewscreen1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="279dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="bottom|center"
+        android:orientation="vertical"
+        tools:context=".viewscreen1">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="match_parent">
+           <Space
+               android:layout_width="20dp"
+               android:layout_height="10dp" />
+
+           <TextView
+               android:id="@+id/textView1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp"
+
+               android:text="product cost:"
+               android:textColor="#100F10"
+               android:textColorHint="#090909"
+               android:textSize="20sp" />
+
+           <Space
+               android:layout_width="8dp"
+               android:layout_height="8dp" />
+
+           <TextView
+               android:id="@+id/textView2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp"
+               android:text="product name:"
+               android:textColor="#100F10"
+               android:textColorHint="#090909"
+               android:textSize="20sp" />
+
+           <Space
+               android:layout_width="8dp"
+               android:layout_height="8dp" />
+
+           <TextView
+               android:id="@+id/textView3"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp"
+
+               android:text="product spec:"
+               android:textColor="#100F10"
+               android:textColorHint="#090909"
+               android:textSize="20sp" />
+
+           <Space
+               android:layout_width="8dp"
+               android:layout_height="8dp" />
+
+           <TextView
+               android:id="@+id/textView4"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp"
+               android:text="product disc:"
+               android:textColor="#100F10"
+               android:textColorHint="#090909"
+               android:textSize="20sp" />
+           <Space
+               android:layout_width="10dp"
+               android:layout_height="10dp"/>
+           <WebView
+               android:id="@+id/webView"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_above="@+id/openWebsiteButton"
+               android:layout_alignParentTop="true"/>
+
+           <Button
+               android:id="@+id/openbuttonlink"
+               android:layout_width="258dp"
+               android:layout_height="match_parent"
+               android:text="BUY NOW"
+               android:layout_gravity="center"
+               android:foregroundGravity="center"
+               android:gravity="center" />
+
+
+       </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>
+
